@@ -3,6 +3,7 @@
 <div>
   <% @lists.each do |list| %>
     <p>
+      <%= cl_image_tag("eitgpqqaxo6u4rywhuhr", width: 400, height: 300, crop: :fill) %>
       <%= list.name %>
       <%= link_to "Show this list", list_path(list), class:"text-decoration-none btn btn-primary ms-3" %>
     </p>
